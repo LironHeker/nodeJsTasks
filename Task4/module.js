@@ -1,7 +1,9 @@
+// Liron Heker + Alex Dovbush
 const fs = require("fs");
 const { random } = require("mathjs");
 const path = require("path");
 
+// function that creates 10 text files with random amount of lines each file
 function createFiles(count = 10) {
   const dir = path.join(__dirname, "text");
 
@@ -19,6 +21,8 @@ function createFiles(count = 10) {
   }
 }
 
+// function that creats output text file and copy from each text file from previous func the amount of lines -
+// like the exercise asks
 function copyFiles(files, outputName = "result.txt") {
   const dir = path.join(__dirname, "text");
   let result = "";
