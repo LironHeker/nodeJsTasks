@@ -1,3 +1,4 @@
+// Liron Heker + Alex Dovbush
 const fs = require("fs");
 const { random, index } = require("mathjs");
 const path = require("path");
