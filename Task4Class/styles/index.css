@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #fdeef4; /* ורוד בהיר מסביב */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 360px;
+  background-color: #d6e2ec; /* תכלת-אפור */
+  padding: 20px 30px 15px;
+  text-align: center;
+  border: 15px solid #ffffff; /* מסגרת לבנה */
+}
+
+h1 {
+  color: #1f3c64;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 115px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+h3 {
+  color: #2e4a72;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+p {
+  font-size: 12px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+footer {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1f3c64;
+}
+
+/* about + contact pages */
+.contact-list {
+  list-style: none;
+  font-size: 12px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+/* navbar on top of every page */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f3c64;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.nav-title {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* small screens: links hidden until the button is clicked */
+.links {
+  display: none;
+}
+
+.links a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.links a:hover {
+  background-color: #2e4a72;
+}
+
+.show-links {
+  display: block;
+}
+
+/* large screens: links always visible, button hidden */
+@media screen and (min-width: 800px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .nav-header {
+    padding: 15px 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    gap: 30px;
+  }
+
+  .links a {
+    padding: 0;
+  }
+
+  .links a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
